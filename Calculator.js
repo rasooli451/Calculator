@@ -122,7 +122,7 @@ function compute(value1, value2, operation){
         case "-":
             res = value1 - value2;
             break;
-        case "x":
+        case "×":
             res = value1*value2;
             break;
         case "÷":
