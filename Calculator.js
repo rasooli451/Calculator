@@ -88,9 +88,9 @@ function evaluate(){
         console.log(nums[0]);
         return nums[0];
      }
-     else if (oper.includes("x") || oper.includes("÷")){
-        index = oper.indexOf("x");
-        op = "x";
+     else if (oper.includes("×") || oper.includes("÷")){
+        index = oper.indexOf("×");
+        op = "×";
         if (index == -1){
             index = oper.indexOf("÷");
             op = "÷";
@@ -106,7 +106,7 @@ function evaluate(){
      }
 }
 function isoperator(oper){
-    if (oper == "+" || oper == "-" || oper == "x" || oper == "÷"){
+    if (oper == "+" || oper == "-" || oper == "×" || oper == "÷"){
         return true;
     }
     return false;
