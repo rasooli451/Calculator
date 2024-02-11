@@ -6,6 +6,7 @@
 
 @font-face {
     font-family: "Digital-7";
+    src: url(/Digital-7.woff) format("woff");
     src: url(/digital-7.ttf) format("truetype");
 }
 
