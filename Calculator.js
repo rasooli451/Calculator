@@ -28,6 +28,9 @@ function clicked(index, isnum){
         else if(index == 0){
             screen.innerHTML = "";
             resscreen.innerHTML = "";
+            nums = [];
+            oper = [];
+            temp = "";
             operation = false;    
         }
         else{
@@ -55,6 +58,7 @@ function clicked(index, isnum){
             oper = [];
         }
     }}
+    
 }
 
 //handles clearing numbers
@@ -65,7 +69,10 @@ function clearit(){
         screen.innerHTML = screen.innerHTML.slice(0, screen.innerHTML.length - 1);
         if (isoperator(tobecleared)){
            oper = oper.slice(0, oper.length-1);
-           operation = true;}
+           operation = true;
+           temp = String(nums[nums.length-1]);
+           nums.pop();
+        }
         else{
             temp = temp.substring(0, temp.length -1);
         }
